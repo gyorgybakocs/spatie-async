@@ -41,11 +41,9 @@ class SerializableException
         try {
             /** @var Throwable $throwable */
             if (!empty($this->details)) {
-                $throwable = new $this->class($this->message, $this->code, $this->previous, $this->details);
-            } else {
-                $throwable = new $this->class($this->message, $this->code, $this->previous);
+                $throwable = new $this->class($this->message, $this->code, $this->previous, $this->details, false);
             }
-
+            $throwable = new $this->class($this->message, $this->code, $this->previous);
         } catch (Throwable $exception) {
             $throwable = new ParallelException($this->message, $this->class, $this->trace);
         }
