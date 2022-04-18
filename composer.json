@@ -1,11 +1,10 @@
 {
-    "name": "spatie/async",
-    "description": "Asynchronous and parallel PHP with the PCNTL extension",
+    "name": "gyorgybakocs/spatie-async",
+    "description": "Asynchronous and parallel PHP with the PCNTL extension from spatie/async",
     "keywords": [
         "spatie",
         "async"
     ],
-    "homepage": "https://github.com/spatie/async",
     "license": "MIT",
     "authors": [
         {
@@ -13,6 +12,9 @@
             "email": "brent@spatie.be",
             "homepage": "https://spatie.be",
             "role": "Developer"
+        },
+        {
+            "name": "BGDS",
         }
     ],
     "require": {
